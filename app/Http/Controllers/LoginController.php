@@ -4,11 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\LoginModel;
+use App\EventModel;
 use Validator;
 use Session;
 
 class LoginController extends Controller
 {
+    public function index1(){
+        $data['datas']=EventModel::all();
+        return view('welcome',$data);
+    }
+    public function index2(){
+        return view('home');
+    }
+
     public function index()
     {
         return view('login.login');
@@ -28,9 +37,9 @@ class LoginController extends Controller
             Session::put('role',$data->role);
             Session::put('login_status',true);
             if(Session::get('role') == '3'){
-                return redirect('welcome');
+                return redirect()->action('LoginController@index1');
             }else{
-                return redirect('home');
+                return redirect()->action('LoginController@index2');
             }
         }else{
             Session::flash('alert_message','USERNAME dan PASSWORD TIDAK COCOK');
@@ -56,6 +65,23 @@ class LoginController extends Controller
     {
         Session::flush();
         return redirect('login');
+    }
+
+
+    public function create1()
+    {
+        return view('transaksi.create_transaksi1');
+    }
+    public function store1(Request  $request)
+    {
+        TransaksiModel::create([
+            'id_event'      => $request->id_event,
+            'nama_member'   => $request->nama_member,
+            'no_ktp'        => $request->no_ktp,
+            'telp'          => $request->telp,
+            'qty'           => $request->qty,
+        ]);        
+        return redirect()->action('LoginController@index')->with('alert_message', 'SUCCESSFULLY ADDEDD');
     }
     
 }

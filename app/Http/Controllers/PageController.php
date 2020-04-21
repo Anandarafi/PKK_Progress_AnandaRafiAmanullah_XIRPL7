@@ -17,11 +17,6 @@ class PageController extends Controller
         $data['datas']=EventModel::all();
         return view('welcome',$data);
     }
-    
-    public function index1(){
-        $event1 = EventModel::all();
-        return view('home', compact('event1'));
-    }
 
     public function create1()
     {

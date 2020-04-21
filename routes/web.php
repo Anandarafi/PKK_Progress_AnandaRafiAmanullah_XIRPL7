@@ -40,11 +40,17 @@ Route::group(['middleware'=>'cek_login'],function(){
 
 });
 Route::get('login','LoginController@index');
+Route::get('welcome','LoginController@index1');
+Route::get('home','LoginController@index2');
 Route::post('login/cek','LoginController@cek');
 Route::get('/register','LoginController@create');
 Route::get('/login/create','LoginController@create');
 Route::post('/login/store','LoginController@store') ->name('login.store');
 Route::get('/logout','LoginController@logout');
+
+Route::get('/create_transaksi','LoginController@create1');
+Route::get('/transaksi/create','LoginController@create1');
+Route::post('/transaksi/store','LoginController@store1') ->name('transaksi.store1');
 
 
 
