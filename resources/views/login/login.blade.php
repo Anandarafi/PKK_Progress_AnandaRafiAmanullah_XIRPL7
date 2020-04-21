@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="LOGIN">
   <meta name="author" content="ANANDARAFI">
+  <link rel="icon" type="image/png" href="{{url('asstess/images/sigin1.png')}}">
     <title>LOGIN - YOTIKET</title>
 
     <!-- Font Icon -->
@@ -57,7 +58,7 @@
 						</form>				
                     </div>
 					<div class="signup-image">
-                        <figure><img src="{{url('asstess/images/signin-image.jpg')}}" alt="sing in image"></figure>
+                        <figure><img src="{{url('asstess/images/sigin1.png')}}" alt="sing in image"></figure>
                         <a href="/register" class="signup-image-link">CREATE AN ACCOUNT</a>
                     </div>
                 </div>

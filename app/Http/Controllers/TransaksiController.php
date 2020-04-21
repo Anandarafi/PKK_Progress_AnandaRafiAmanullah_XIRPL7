@@ -15,7 +15,7 @@ class TransaksiController extends Controller
     }
     public function create()
     {
-        return view('transaksi.create_transaksi');
+        return view('transaksi.tambah_transaksi');
     }
     public function store(Request  $request)
     {

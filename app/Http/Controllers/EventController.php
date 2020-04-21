@@ -51,12 +51,12 @@ class EventController extends Controller
     {
 
         EventModel::where('id_event', $request->id)->update([
-            'nama_event'      => $request->nama_event,
-            'tgl_pelaksanaan'     => $request->tgl_pelaksanaan,
-            'info'     => $request->info,
-            'foto'     => $request->foto,
-            'jumlah_tiket'     => $request->jumlah_tiket,
-            'harga'     => $request->harga,
+            'nama_event'        => $request->nama_event,
+            'tgl_pelaksanaan'   => $request->tgl_pelaksanaan,
+            'info'              => $request->info,
+            'foto'              => $request->foto,
+            'jumlah_tiket'      => $request->jumlah_tiket,
+            'harga'             => $request->harga,
         ]);
         if($request->hasFile('foto'))
         {

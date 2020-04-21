@@ -50,15 +50,14 @@ class LoginController extends Controller
     {
         return view('login.register');
     }
-    public function store(Request $request)
+    public function store(Request  $request)
     {
-        LoginModel::create([
-            'nama'            => $request->nama,
-            'username'        => $request->username,
+        TransaksiModel::create([
+            'nama'      => $request->nama,
+            'username'   => $request->username,
             'password'        => $request->password,
-            'role'            => $request->role,
-        ]);
-        
+            'role'          => $request->role,
+        ]);        
         return redirect()->action('LoginController@index');
     }
     public function logout()

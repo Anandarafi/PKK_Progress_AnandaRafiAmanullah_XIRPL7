@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="icon" type="image/png" href="{{url('asstess/images/sigin1.png')}}">
 
   <title>TIKET ONLINE - YO TIKET</title>
 
@@ -57,7 +58,6 @@
       <div class="intro-text">
         <div class="intro-lead-in">WELCOME TO OUR WEBSITE</div>
         <div class="intro-heading text-uppercase">IT'S NICE TO MEET YOU</div>
-        <a class="btn btn-success btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
     </div>
   </header>
@@ -236,7 +236,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" style="width:100%;position:absolute;bottom:0;">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">

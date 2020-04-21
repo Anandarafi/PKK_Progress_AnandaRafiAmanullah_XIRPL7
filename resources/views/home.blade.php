@@ -3,6 +3,7 @@
 @section('container')
 
 @if(Session::get('role')=='1')
+<section  class="content">
 <div class="container">
   <div class="panel-body">
   <h2 align="center">SELAMAT DATANG DI WEBSITE TIKET ONLINE - YOTIKET</h2>
@@ -16,6 +17,7 @@
   <h5 align="center">ANDA SEKARANG SEBAGAI PENYEDIA EVENT </h5>
   </div>
 </div>
+</section>
 @endif
 
   @endsection

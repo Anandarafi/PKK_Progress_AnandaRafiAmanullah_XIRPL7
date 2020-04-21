@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="icon" type="image/png" href="{{url('asstess/images/sigin1.png')}}">
 
   <title>TIKET ONLINE - YO TIKET</title>
 
@@ -32,7 +33,7 @@
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">TIKET ONLINE<sup>YOTIKET</sup></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
+        MENU
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">

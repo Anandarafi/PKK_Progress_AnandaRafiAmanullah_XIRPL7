@@ -28,13 +28,13 @@ Route::group(['middleware'=>'cek_login'],function(){
     Route::get('/transaksi','TransaksiController@index');
     Route::get('/transaksi/edit/{id}', "TransaksiController@edit");
     Route::post('/transaksi/update', "TransaksiController@update") ->name('transaksi.update');
-    Route::get('/create_transaksi','TransaksiController@create');
+    Route::get('/tambah_transaksi','TransaksiController@create');
     Route::get('/transaksi/create','TransaksiController@create');
     Route::post('/transaksi/store','TransaksiController@store') ->name('transaksi.store');
     Route::get('/transaksi/hapus/{id}', "TransaksiController@hapus");
     Route::get('/laporan',"PeminjamanController@cetak_pdf");
 
-    Route::get('/create_transaksi','PageController@create1');
+    Route::get('/create_transaksi1','PageController@create1');
     Route::get('/transaksi/create','PageController@create1');
     Route::post('/transaksi/store','PageController@store1') ->name('transaksi.store1');
 

@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('layoutadmin.template')
 @section('title', 'TRANSACTION - YOTIKET') 
 @section('container')
 
@@ -33,7 +33,7 @@
                 </div>
                 <div class="form-group">
                   <label>MEMBER NAME</label>
-                  <input type="date" name="nama_member" class="form-control" required>
+                  <input type="text" name="nama_member" class="form-control" placeholder="MEMBER NAME" required>
                 </div>
                 <div class="form-group">
                   <label>ID CARD NUMBER</label>

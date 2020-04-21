@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="LOGIN">
   <meta name="author" content="ANANDARAFI">
+  <link rel="icon" type="image/png" href="{{url('asstess/images/sigin1.png')}}">
     <title>SIGNUP - YOTIKET</title>
 
     <!-- Font Icon -->
@@ -21,7 +22,7 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">SIGN UP</h2>
-                        <form method="POST" action="{{ url('/login/store') }} " enctype="multimedia/form-data">
+                        <form method="POST" action="{{url('login/store')}}" enctype="multimedia/form-data">
                             <div class="form-group">
                                 <label for="nama"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="nama" id="nama" placeholder="FULL NAME"/>
@@ -35,7 +36,7 @@
                                 <input type="password" name="password" id="password" placeholder="PASSWORD"/>
                             </div>
                             <div class="form-group">
-                            <label for="role"><i class="zmdi zmdi-accounts-list-alt"></i></label>
+                            <label for="role"><i class="zmdi zmdi-accounts-list-alt"></i></label><br><br>
                             <select name="role" id="role" class="selectpicker" data-style="select-with-transition" title="Select Class" data-size="10">
                                 @foreach ($role as $data)
                             <option value="{{ $data->role }}" >{{ $data->nama_role }}</option>
@@ -43,13 +44,13 @@
                             </select>
                         </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="register" id="signup" class="form-submit" value="REGISTER"/>
+                            <button class="btn --green" type="submit">REGISTER</button>
                             </div>
 
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="{{url('asstess/images/signup-image.jpg')}}" alt="sing up image"></figure>
+                        <figure><img src="{{url('asstess/images/sigin1.png')}}" alt="sing up image"></figure>
                         <a href="/login" class="signup-image-link">I AM ALREADY MEMBER</a>
                     </div>
                 </div>

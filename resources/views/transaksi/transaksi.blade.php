@@ -17,7 +17,7 @@
         <div class="col-xl-12">
       <div class="box box-primary">
         <div class="box-header">
-          <a href="/create_transaksi" class="btn btn-primary" role="button" title="Tambah Data"><i class="glyphicon glyphicon-plus"></i> Tambah</a>
+          <a href="/tambah_transaksi" class="btn btn-primary" role="button" title="Tambah Data"><i class="glyphicon glyphicon-plus"></i>ADD</a>
           </div>
           @if(Session::get('alert_message'))
                 <div class="alert alert-success">
@@ -40,6 +40,7 @@
                       <th>ID CARD NUMBER</th>
                       <th>PHONE NUMBER</th>
                       <th>QUANTITY</th>
+                      <th>ACTION</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -56,8 +57,8 @@
                   <td>{{$data->telp}}</td>
                   <td>{{$data->qty}}</td>
                   <td>
-                    <a href="{{url('/event/detail/'.$data->id_transaksi)}}" class="btn btn-success" role="button" title="EDIT DATA"><i class="glyphicon glyphicon-edit"></i></a>
-                    <a href="{{url('/event/hapus/'.$data->id_transaksi)}}" class="btn btn-danger" role="button" title="DELETE DATA"><i class="glyphicon glyphicon-trash"></i></a>
+                    <a href="{{url('/transaksi/detail/'.$data->id_transaksi)}}" class="btn btn-success" role="button" title="EDIT DATA"><i class="fas fa-edit"></i></a>
+                    <a href="{{url('/transaksi/hapus/'.$data->id_transaksi)}}" class="btn btn-danger" role="button" title="DELETE DATA"><i class="fas fa-trash"></i></a>
                   </td>
                 </tr>
 

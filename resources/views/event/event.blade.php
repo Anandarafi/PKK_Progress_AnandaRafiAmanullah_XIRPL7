@@ -17,7 +17,7 @@
         <div class="col-xl-12">
       <div class="box box-primary">
         <div class="box-header">
-          <a href="/create_event" class="btn btn-primary" role="button" title="Tambah Data"><i class="glyphicon glyphicon-plus"></i> Tambah</a>
+          <a href="/create_event" class="btn btn-primary" role="button" title="Tambah Data"><i class="glyphicon glyphicon-plus"></i>ADD</a>
           </div>
           @if(Session::get('alert_message'))
                 <div class="alert alert-success">
@@ -41,7 +41,7 @@
                       <th>NUMBER OF TICKETS</th>
                       <th>PRICE</th>
                       <th>IMAGE</th>
-                      <th>AKSI</th>
+                      <th>ACTION</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -59,8 +59,8 @@
                   <td>{{$data->harga}}</td>
                   <td><img width="100" src="{{asset('images/'.$data->foto)}}"></td>
                   <td>
-                    <a href="{{url('/event/edit/'.$data->id_event)}}" class="btn btn-success" role="button" title="EDIT DATA"><i class="glyphicon glyphicon-edit"></i></a>
-                    <a href="{{url('/event/hapus/'.$data->id_event)}}" class="btn btn-danger" role="button" title="DELETE DATA"><i class="glyphicon glyphicon-trash"></i></a>
+                    <a href="{{url('/event/edit/'.$data->id_event)}}" class="btn btn-success" role="button" title="EDIT DATA"><i class="fas fa-edit"></i></a>
+                    <a href="{{url('/event/hapus/'.$data->id_event)}}" class="btn btn-danger" role="button" title="DELETE DATA"><i class="fas fa-trash"></i></a>
                   </td>
                 </tr>
 
