@@ -36,7 +36,7 @@ class LoginController extends Controller
             Session::put('password',$data->password);
             Session::put('role',$data->role);
             Session::put('login_status',true);
-            if(Session::get('role') == '3'){
+            if(Session::get('role') == '1'){
                 return redirect()->action('LoginController@index1');
             }else{
                 return redirect()->action('LoginController@index2');
